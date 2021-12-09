@@ -280,11 +280,11 @@ $(document).ready(function() {
 
     });
     $(this).on('click', '#rejected_btn_of_services_info', function() {
-        $('#active_active_section').addClass('d-none');
         $('#services_active_section').addClass('d-none');
+        $('#services_pause_section').addClass('d-none');
+        $('#services_rejected_section').removeClass('d-none');
         $('#rejected_btn_of_services_info').removeClass('d-none');
         $('#pause_btn_of_services_info').removeClass('active');
-        $('#services_rejected_section').removeClass('d-none');
         $('#pause_btn_of_services_info').html('Pause');
         $('#active_btn_of_services_info').removeClass('active');
         $('#active_btn_of_services_info').html('Active');
