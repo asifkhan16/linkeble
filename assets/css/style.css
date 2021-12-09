@@ -893,6 +893,7 @@ label.switch>input[type="checkbox"]:checked~span:after {
 }
 
 .services-table tr td:nth-child(2) {
+    min-width: 400px;
     width: 400px;
 }
 
