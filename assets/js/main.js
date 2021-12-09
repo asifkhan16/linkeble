@@ -73,6 +73,10 @@ $(document).ready(function() {
     $(this).on('click', '#exit_forgot_model', function() {
         $('#forgot-form').addClass('d-none');
     });
+    $(this).on('click', '#back_forgot_model', function() {
+        $('#forgot-form').addClass('d-none');
+        $('#login-form').removeClass('d-none');
+    });
     // MAIN FORM IN END
     //    START-----  FUNCTIONS FOR CHOOSEN FILE IN SERVICES PAGE 
     $(this).on("click", "#file-upload-btn", function() {
