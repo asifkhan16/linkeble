@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+1@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
 :root {
@@ -59,7 +59,9 @@ body {
     right: 0;
 }
 
-.logged-in-user-pop-up h6 {
+
+
+#logged_in_user_pop_up p {
     background-color: var(--primary-color);
     padding: 8px;
     color: #fff;
@@ -1204,15 +1206,9 @@ label.switch>input[type="checkbox"]:checked~span:after {
     width: 80px;
 }
 
-@media
-
 /*****************PROGRAMMING SERVICES PAGE END**********************/
 /*****************ORDER DETAILS PAGE START**********************/
-/*.orderdetails .indicator {
-    width: 6rem;
-    height: 7px;
-    background-color: var(--primary-color);
-}*/
+
 .order-confirm .indicator {
     background-color: #919191;
     width: 15rem;

@@ -295,7 +295,7 @@ $(document).ready(function() {
 
     // SERVICES INFO PAGE END
 
-    
+
 
     $('#logged_in_user_pop_up').hide();
     $(this).on('mouseover', '#navbar_online_user_image', function() {
