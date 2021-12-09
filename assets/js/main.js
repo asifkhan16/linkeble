@@ -47,6 +47,7 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'linear'
     });
+    //    LOGIN , SIGNIN, FORGOT
     $(this).on("click", "#nav-sign-btn", function() {
         $("#login-form").removeClass("d-none");
     });
@@ -57,8 +58,22 @@ $(document).ready(function() {
     $(this).on("click", "#signin-btn", function() {
         $("#login-form").removeClass("d-none");
         $("#signup-form").addClass("d-none");
-
     });
+    $(this).on("click", "#forgot-btn", function() {
+        $("#login-form").addClass("d-none");
+        $("#forgot-form").removeClass("d-none");
+    });
+    // MAIN FORM IN START
+    $(this).on('click', '#exit_sign_in_model', function() {
+        $('#login-form').addClass('d-none');
+    });
+    $(this).on('click', '#exit_sign_up_model', function() {
+        $('#signup-form').addClass('d-none');
+    });
+    $(this).on('click', '#exit_forgot_model', function() {
+        $('#forgot-form').addClass('d-none');
+    });
+    // MAIN FORM IN END
     //    START-----  FUNCTIONS FOR CHOOSEN FILE IN SERVICES PAGE 
     $(this).on("click", "#file-upload-btn", function() {
         $("#file-upload").click();
@@ -268,14 +283,7 @@ $(document).ready(function() {
 
     // SERVICES INFO PAGE END
 
-    // MAIN FORM IN START
-    $(this).on('click', '#exit_sign_in_model', function() {
-        $('#login-form').addClass('d-none');
-    });
-    $(this).on('click', '#exit_sign_up_model', function() {
-        $('#signup-form').addClass('d-none');
-    });
-    // MAIN FORM IN END
+    
 
 
 
