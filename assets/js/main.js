@@ -94,7 +94,7 @@ $(document).ready(function() {
         $("#services").removeClass("d-none");
     });
     /////////////////
-    $(this).on("click", "#basic-btn" , function(){
+    $(this).on("click", "#basic-btn", function() {
         $("#standard-section").addClass("d-none");
         $("#premium-section").addClass("d-none");
         $("#basic-section").removeClass("d-none");
@@ -105,7 +105,7 @@ $(document).ready(function() {
         $("#basic-btn").addClass("fw-bold");
         $("#basic-btn").removeClass("text-muted");
     });
-    $(this).on("click", "#standard-btn" , function(){
+    $(this).on("click", "#standard-btn", function() {
         $("#basic-section").addClass("d-none");
         $("#premium-section").addClass("d-none");
         $("#standard-section").removeClass("d-none");
@@ -116,7 +116,7 @@ $(document).ready(function() {
         $("#standard-btn").addClass("fw-bold");
         $("#standard-btn").removeClass("text-muted");
     });
-    $(this).on("click", "#premium-btn" , function(){
+    $(this).on("click", "#premium-btn", function() {
         $("#basic-section").addClass("d-none");
         $("#standard-section").addClass("d-none");
         $("#premium-section").removeClass("d-none");
@@ -126,34 +126,34 @@ $(document).ready(function() {
         $("#standard-btn").addClass("text-muted");
         $("#premium-btn").addClass("fw-bold");
         $("#premium-btn").removeClass("text-muted");
-    }); 
+    });
     ///////////////////////////
     ///     ORDER  DETAILS start
-    $(this).on("click", "#order-details-continue" , function(){
+    $(this).on("click", "#order-details-continue", function() {
         $("#order-detail").addClass("d-none");
         $("#Payment").removeClass("d-none");
-        $("#step-1").css("background-color","#00966B");
-        $("#num-2").css("background-color","#00966B");
-        $("#pay-clr").css("color","#00966B");
+        $("#step-1").css("background-color", "#00966B");
+        $("#num-2").css("background-color", "#00966B");
+        $("#pay-clr").css("color", "#00966B");
     });
-    $(this).on("click", "#pay-continue" , function(){
+    $(this).on("click", "#pay-continue", function() {
         $("#Payment").addClass("d-none");
         $("#place-order").removeClass("d-none");
-        $("#step-2").css("background-color","#00966B")
-        $("#num-3").css("background-color","#00966B")
-        $("#place-order-clr").css("color","#00966B");
+        $("#step-2").css("background-color", "#00966B")
+        $("#num-3").css("background-color", "#00966B")
+        $("#place-order-clr").css("color", "#00966B");
     });
-    $(this).on("click", "#visa-card" , function(){
+    $(this).on("click", "#visa-card", function() {
         $("#visa-card-select").removeClass("d-none");
-        $("#visa-card").css("border" , "1.5px solid #00FFF6");
+        $("#visa-card").css("border", "1.5px solid #00FFF6");
         $("#master-card-select").addClass("d-none");
-        $("#master-card").css("border" , "none");
+        $("#master-card").css("border", "none");
     });
-    $(this).on("click", "#master-card" , function(){
+    $(this).on("click", "#master-card", function() {
         $("#master-card-select").removeClass("d-none");
-        $("#master-card").css("border" , "1.5px solid #00FFF6");
+        $("#master-card").css("border", "1.5px solid #00FFF6");
         $("#visa-card-select").addClass("d-none");
-        $("#visa-card").css("border" , "none");
+        $("#visa-card").css("border", "none");
     });
     ///     ORDER DETAILS end
 
@@ -228,6 +228,55 @@ $(document).ready(function() {
     $(this).on('click', '.all-paticipants', function() {
         $('.group-members-list').slideToggle();
     });
+
+    // SERVICES INFO PAGE START
+    $(this).on('click', '#pause_btn_of_services_info', function() {
+        $('#services_active_section').addClass('d-none');
+        $('#services_pause_section').removeClass('d-none');
+        $('#active_btn_of_services_info').removeClass('active');
+        $('#active_btn_of_services_info').html('Active');
+        $('#rejected_btn_of_services_info').removeClass('active');
+        $('#rejected_btn_of_services_info').html('Rejected');
+        $(this).addClass('active');
+        $(this).html('Pause<i class="fas fa-chevron-right ms-5"></i>');
+
+    });
+    $(this).on('click', '#active_btn_of_services_info', function() {
+        $('#services_active_section').removeClass('d-none');
+        $('#services_pause_section').addClass('d-none');
+        $('#pause_btn_of_services_info').removeClass('active');
+        $('#pause_btn_of_services_info').html('Pause');
+        $('#rejected_btn_of_services_info').removeClass('active');
+        $('#rejected_btn_of_services_info').html('Rejected');
+        $(this).addClass('active');
+        $(this).html('Active<i class="fas fa-chevron-right ms-5"></i>');
+
+    });
+    $(this).on('click', '#rejected_btn_of_services_info', function() {
+        $('#active_active_section').addClass('d-none');
+        $('#services_active_section').addClass('d-none');
+        $('#rejected_btn_of_services_info').removeClass('d-none');
+        $('#pause_btn_of_services_info').removeClass('active');
+        $('#services_rejected_section').removeClass('d-none');
+        $('#pause_btn_of_services_info').html('Pause');
+        $('#active_btn_of_services_info').removeClass('active');
+        $('#active_btn_of_services_info').html('Active');
+        $(this).addClass('active');
+        $(this).html('Rejected<i class="fas fa-chevron-right ms-5"></i>');
+
+    });
+
+    // SERVICES INFO PAGE END
+
+    // MAIN FORM IN START
+    $(this).on('click', '#exit_sign_in_model', function() {
+        $('#login-form').addClass('d-none');
+    });
+    $(this).on('click', '#exit_sign_up_model', function() {
+        $('#signup-form').addClass('d-none');
+    });
+    // MAIN FORM IN END
+
 
 
 

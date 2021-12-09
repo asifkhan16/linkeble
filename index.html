@@ -64,82 +64,88 @@
         </div>
     </div>
     <!--------   LOGIN FORM START -------->
-    <div class="login-form-model position-fixed text-dark p-4 d-none" id="login-form">
-        <h2 class="text-center mt-3">Welcome Back!</h2>
-        <p class="text-center mt-2" style="font-size: 14px">Sign in to our app to hire exactly what you need.</p>
-        <form method="POST" action="#" class="login-form">
-            <label for="email">Email</label>
-            <div class="position-relative mb-2">
-                <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
-                <input type="email" name="email" class="login-input" placeholder="appuser2021@gmail.com">
-            </div>
-            <label for="password">Password</label>
-            <div class="position-relative mb-2">
-                <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
-                <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
-                <input type="password" name="password" class="login-input" placeholder="*********">
-            </div>
-            <div class="checkbox-forget-btn">
-                <input type="checkbox" class="checkbox-round me-2"><span style="font-size: 13px;">Remember me</span>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <input type="submit" name="" value="Sign in" class="submit-btn mt-2">
-            <div class="text-center mt-4 mb-3" style="font-size: 12px;">
-                <span class="text-muted">Don't Have account?</span>
-                <span class="ms-2" id="join-btn">Join Now</span>
-            </div>
-            <div class="text-center">
-                <span class="orsignin position-relative" style="font-size: 17px">Or Sign in With</span>
-            </div>
-            <div class="social-links d-flex justify-content-between mt-5 mb-3">
-                <div class="position-relative">
-                    <img src="assets/icons/Icon awesome-google.png" class="position-absolute" style="top: 2px; left: 15px" width="19px">
-                    <a href="#" class="google-btn">Google</a>
+    <div class="login-form-model position-fixed text-dark  d-none" id="login-form">
+        <div class="position-relative p-4">
+            <span id="exit_sign_in_model" class="position-absolute px-2" style="top: 15px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <h2 class="text-center mt-3">Welcome Back!</h2>
+            <p class="text-center mt-2" style="font-size: 14px">Sign in to our app to hire exactly what you need.</p>
+            <form method="POST" action="#" class="login-form">
+                <label for="email">Email</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
+                    <input type="email" name="email" class="login-input" placeholder="appuser2021@gmail.com">
                 </div>
-                <div class="position-relative">
-                    <img src="assets/icons/Icon awesome-facebook-f.png" class="position-absolute" style="top: 0; left: 15px" width="13px">
-                    <a href="#" class="facebook-btn">Facebook</a>
+                <label for="password">Password</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
+                    <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
+                    <input type="password" name="password" class="login-input" placeholder="*********">
                 </div>
-            </div>
-        </form>
+                <div class="checkbox-forget-btn">
+                    <input type="checkbox" class="checkbox-round me-2"><span style="font-size: 13px;">Remember me</span>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <input type="submit" name="" value="Sign in" class="submit-btn mt-2">
+                <div class="text-center mt-4 mb-3" style="font-size: 12px;">
+                    <span class="text-muted">Don't Have account?</span>
+                    <span class="ms-2" id="join-btn">Join Now</span>
+                </div>
+                <div class="text-center">
+                    <span class="orsignin position-relative" style="font-size: 17px">Or Sign in With</span>
+                </div>
+                <div class="social-links d-flex justify-content-between mt-5 mb-3">
+                    <div class="position-relative">
+                        <img src="assets/icons/Icon awesome-google.png" class="position-absolute" style="top: 2px; left: 15px" width="19px">
+                        <a href="#" class="google-btn">Google</a>
+                    </div>
+                    <div class="position-relative">
+                        <img src="assets/icons/Icon awesome-facebook-f.png" class="position-absolute" style="top: 0; left: 15px" width="13px">
+                        <a href="#" class="facebook-btn">Facebook</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <!--------   LOGIN FORM END -------->
     <!-- --------------------------------- -->
     <!--------   SIGNUP FORM START -------->
-    <div class="login-form-model position-fixed text-dark p-4 d-none" id="signup-form">
-        <h2 class="text-center mt-2">Welcome</h2>
-        <p class="mt-2" style="font-size: 14px">Sing Up to access all feature and Functionality</p>
-        <form method="POST" action="#" class="login-form">
-            <label for="email">Email</label>
-            <div class="position-relative mb-2">
-                <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
-                <img src="assets/icons/Icon material-done.png" class="position-absolute" style="top: 17px; right:25px" width="18px">
-                <input type="email" name="email" class="login-input" placeholder="appuser2021@gmail.com">
-            </div>
-            <label for="username">Username</label>
-            <div class="position-relative mb-2">
-                <img src="assets/icons/Icon awesome-user-circle.png" class="position-absolute" style="top: 15px; left:25px" width="20px">
-                <img src="assets/icons/Icon material-done.png" class="position-absolute" style="top: 17px; right:25px" width="18px">
-                <input type="text" name="username" class="login-input" placeholder="FreelanceAppUser2021">
-                <span class="text-muted" style="font-size: 12px;">Username will be Visible to everyone & You can't change it</span>
-            </div>
-            <label for="password">Password</label>
-            <div class="position-relative mb-2">
-                <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
-                <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
-                <input type="password" name="password" class="login-input" placeholder="*********">
-                <span class="text-muted" style="font-size: 12px;">Enter Upper, Lowercase letters & Number for strong Password</span>
-            </div>
-            <div class="checkbox-forget-btn mt-3">
-                <input type="checkbox" class="checkbox-round me-2">
-                <span style="font-size: 13px;">By Joining, I agree with App's Terms and Conditions</span>
-            </div>
-            <input type="submit" name="" value="Sign in" class="submit-btn mt-2">
-            <div class="text-center mt-4">
-                <span class="text-muted" style="font-size: 12px;">Already have an account?</span>
-                <span class="ms-2" id="signin-btn">Sign in Here</span>
-            </div>
-        </form>
+    <div class="login-form-model position-fixed text-dark d-none" id="signup-form">
+        <div class="position-relative p-4">
+            <span id="exit_sign_up_model" class="position-absolute px-2" style="top: 15px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <h2 class="text-center mt-2">Welcome</h2>
+            <p class="mt-2" style="font-size: 14px">Sing Up to access all feature and Functionality</p>
+            <form method="POST" action="#" class="login-form">
+                <label for="email">Email</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
+                    <img src="assets/icons/Icon material-done.png" class="position-absolute" style="top: 17px; right:25px" width="18px">
+                    <input type="email" name="email" class="login-input" placeholder="appuser2021@gmail.com">
+                </div>
+                <label for="username">Username</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon awesome-user-circle.png" class="position-absolute" style="top: 15px; left:25px" width="20px">
+                    <img src="assets/icons/Icon material-done.png" class="position-absolute" style="top: 17px; right:25px" width="18px">
+                    <input type="text" name="username" class="login-input" placeholder="FreelanceAppUser2021">
+                    <span class="text-muted" style="font-size: 12px;">Username will be Visible to everyone & You can't change it</span>
+                </div>
+                <label for="password">Password</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
+                    <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
+                    <input type="password" name="password" class="login-input" placeholder="*********">
+                    <span class="text-muted" style="font-size: 12px;">Enter Upper, Lowercase letters & Number for strong Password</span>
+                </div>
+                <div class="checkbox-forget-btn mt-3">
+                    <input type="checkbox" class="checkbox-round me-2">
+                    <span style="font-size: 13px;">By Joining, I agree with App's Terms and Conditions</span>
+                </div>
+                <input type="submit" name="" value="Sign in" class="submit-btn mt-2">
+                <div class="text-center mt-4">
+                    <span class="text-muted" style="font-size: 12px;">Already have an account?</span>
+                    <span class="ms-2" id="signin-btn">Sign in Here</span>
+                </div>
+            </form>
+        </div>
     </div>
     <!--------   SIGNUP FORM END -------->
     <div class="container">

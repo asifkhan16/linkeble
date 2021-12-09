@@ -75,14 +75,15 @@
             <div class="col-md-2 pt-3 pe-0" style="border-right: 1px solid rgba(255,255,255,0.3)">
                 <a href="#" class="service-create-link text-white px-2 p-1 rounded d-inline-block"><i class="fas fa-plus me-2"></i>Create New Service</a>
                 <ul class="services-info">
-                    <li class="active">Active<i class="fas fa-chevron-right ms-5"></i></li>
-                    <li class="">Pause</li>
+                    <li id="active_btn_of_services_info" class="active">Active<i class="fas fa-chevron-right ms-5"></i></li>
+                    <li id="pause_btn_of_services_info" class="">Pause</li>
                     <li class="">Pending</li>
                     <li class="">Draft</li>
-                    <li class="">Rejected</li>
+                    <li id="rejected_btn_of_services_info" class="">Rejected</li>
                 </ul>
             </div>
-            <div class="col-md-10 pt-3 ps-4 pb-5">
+            <!-- Active section -->
+            <div id="services_active_section" class="col-md-10  pt-3 ps-4 pb-5">
                 <div class="d-lg-flex justify-content-between mb-2 ">
                     <h4>Active Services</h4>
                     <div class="service-options">
@@ -174,6 +175,162 @@
                             <td>938</td>
                             <td>27</td>
                             <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- pause section -->
+            <div id="services_pause_section" class="col-md-10 d-none  pt-3 ps-4 pb-5">
+                <div class="d-lg-flex justify-content-between mb-2 ">
+                    <h4>Pause Services</h4>
+                    <div class="service-options">
+                        <button><i class="far fa-edit me-2"></i>Edit</button>
+                        <button><i class="fas fa-pause me-2"></i>Resume</button>
+                        <button><i class="far fa-trash-alt me-2"></i>Delete</button>
+                        <select>
+                            <option>1 week</option>
+                            <option>2 week</option>
+                            <option>3 week</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="services-table rounded" style="overflow-x: auto;">
+                    <table class="w-100 rounded ">
+                        <tr>
+                            <td></td>
+                            <td class="text-start"><span>Services</span></td>
+                            <td><span>Impressions</span></td>
+                            <td><span>ProfileViews</span></td>
+                            <td><span>Orders</span></td>
+                            <td><span>Cancellation</span></td>
+                            <td><span>Rating</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/1Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Professional Mobile Apps Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/2Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Design Professional UI/UX for Apps & Web</p>
+                                </div>
+                            </td>
+                            <td>875</td>
+                            <td>21</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/5Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Native Appsfor Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>1123</td>
+                            <td>43</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/3Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I Will do Machine Learning Projects</p>
+                                </div>
+                            </td>
+                            <td>478</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4.9</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/9Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">Image Processing using OpenCV Python</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- rejected section -->
+            <div id="services_rejected_section" class="col-md-10 d-none pt-3 ps-4 pb-5">
+                <div class="d-lg-flex justify-content-between mb-2 ">
+                    <h4>Pause Services</h4>
+                    <div class="service-options">
+                        <button><i class="far fa-edit me-2"></i>Edit</button>
+                        <!-- <button><i class="fas fa-pause me-2"></i>Resume</button> -->
+                        <button><i class="far fa-trash-alt me-2"></i>Delete</button>
+                        <select>
+                            <option>1 week</option>
+                            <option>2 week</option>
+                            <option>3 week</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="services-table rounded" style="overflow-x: auto;">
+                    <table class="w-100 rounded ">
+                        <tr>
+                            <td></td>
+                            <td class="text-start"><span>Services</span></td>
+                            <td><span>Impressions</span></td>
+                            <td><span>ProfileViews</span></td>
+                            <td><span>Orders</span></td>
+                            <td><span>Cancellation</span></td>
+                            <td><span>Rating</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-times-circle"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/1Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Professional Mobile Apps Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-times-circle"></i></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/2Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Design Professional UI/UX for Apps & Web</p>
+                                </div>
+                            </td>
+                            <td>875</td>
+                            <td>21</td>
+                            <td>1</td>
                             <td>0</td>
                             <td>5.0</td>
                         </tr>

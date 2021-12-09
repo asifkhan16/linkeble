@@ -252,9 +252,19 @@ body {
     border-radius: 10px;
     background-color: #fff;
     width: 400px;
-    top: 4rem;
-    right: 5rem;
+    top: 55%;
+    left: 80%;
+    transform: translate(-55%, -50%);
     z-index: 9999
+}
+
+@media screen and (max-width: 768px) {
+    .login-form-model {
+        /*width: 380px;*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .login-form .login-input {
