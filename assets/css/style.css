@@ -1,208 +1,3 @@
-/*********************************************************/
-/*****************OPEN GIG PAGE START**********************/
-.packages {
-    background-color: #004B35;
-    border-radius: 10px;
-}
-
-.packages p {
-    margin-bottom: 2px !important;
-    font-size: 11px;
-}
-
-.packages h6:hover {
-    cursor: pointer;
-}
-
-.packages .active-package::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0px;
-    width: 100%;
-    height: 5px;
-    background-color: var(--primary-color);
-    border-radius: 8px;
-
-}
-
-.packages .choose-btn {
-    background-color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 8px 2rem;
-    border-radius: 10px;
-}
-
-/*****************OPEN GIG PAGE END**********************/
-/*****************ACTIVE ORDERS PAGE START**********************/
-.orders-options select {
-    background-color: var(--primary-color);
-    border: none;
-    overflow: none;
-    padding: 5px 15px;
-    color: #fff;
-    cursor: pointer;
-    /*border-radius: 8px;*/
-}
-
-.orders-options a {
-    text-decoration: none;
-    background-color: transparent;
-    padding: 6px 10px;
-    border: 1.5px solid var(--secondary-color);
-    border-radius: 8px;
-    color: #fff;
-}
-
-.active-orders {
-    background-color: #004B35;
-    border-radius: 10px
-}
-
-.active-orders .show {
-    border: 1.5px solid #919191;
-    border-radius: 5px;
-    padding: 4px 8px;
-    font-size: 14px;
-}
-
-.active-orders h5 {
-    font-size: 17px;
-}
-
-.active-orders p {
-    font-size: 10px;
-}
-
-.active-orders a {
-    border: 2px solid var(--primary-color);
-    text-decoration: none;
-    color: #fff;
-
-}
-
-.active-order-table td {
-    padding: 10px;
-    width: 25%;
-}
-
-/*****************ACTIVE ORDERS PAGE END**********************/
-/*****************PROGRAMMING SERVICES PAGE START**********************/
-.pro-language-parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 5rem;
-    grid-row-gap: 5rem;
-}
-
-.pro-language-child {
-    border-radius: 10px;
-    background-color: #00966B;
-    box-shadow: 0px 0px 10px 5px #002D20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pro-language-child img {
-    width: 80px;
-}
-
-@media
-
-/*****************PROGRAMMING SERVICES PAGE END**********************/
-/*****************ORDER DETAILS PAGE START**********************/
-/*.orderdetails .indicator {
-    width: 6rem;
-    height: 7px;
-    background-color: var(--primary-color);
-}*/
-.order-confirm .indicator {
-    background-color: #919191;
-    width: 15rem;
-    height: 7px;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px 8px;
-}
-
-.order-confirm .steps {
-    background-color: #919191;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 8px;
-    display: inline-block;
-}
-
-.order-details .star-icons {
-    font-size: 16px !important;
-}
-
-.order-details .confirmation-card,
-.payments .confirmation-card,
-.place-order .confirmation-card {
-    background-color: #002D20;
-    border-radius: 5px;
-}
-
-.order-details .order-info p,
-.payments .order-info p {
-    margin-bottom: 0px !important;
-    font-size: 14px;
-}
-
-.order-details .continue-btn,
-.payments .continue-btn {
-    background-color: #00966B;
-    padding: 8px 4.5rem;
-    border-radius: 20px;
-    color: #fff
-}
-
-.order-details ul {
-    list-style-type: none;
-    padding-left: 0 !important;
-    font-size: 13px !important;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 1rem;
-}
-
-.order-details ul img {
-    margin-right: 10px;
-}
-
-.payments .form-style {
-    border: none;
-    border-bottom: 2px solid #004B35;
-    background-color: transparent;
-    width: 100%;
-    text-align: center;
-    padding: 5px 0;
-    color: #fff;
-    font-size: 20px;
-}
-
-.order_submit_btn {
-    /*box-shadow: none;*/
-}
-
-.term-and-condition {
-    font-size: 14px;
-    width: 85% !important;
-    /*display: inline-block;*/
-}
-
-.term-and-condition a {
-    text-decoration: none;
-    color: #004B35;
-    font-weight: bold;
-}
-
-/*****************ORDER DETAILS PAGE END**********************/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
@@ -1264,6 +1059,9 @@ label.switch>input[type="checkbox"]:checked~span:after {
 }
 
 /*****************CREATE SERVICES PAGE END**********************/
+/***************************************************************/
+/*****************MANAGE ORDERS PAGE START**********************/
+
 .manage-active-order-table p {
     display: inline-block;
     border-radius: 3px;
@@ -1294,9 +1092,212 @@ label.switch>input[type="checkbox"]:checked~span:after {
 
 }
 
-/*****************MANAGE ORDERS PAGE START**********************/
-
 /*****************MANAGE ORDERS PAGE END**********************/
+/*********************************************************/
+/*****************OPEN GIG PAGE START**********************/
+.packages {
+    background-color: #004B35;
+    border-radius: 10px;
+}
+
+.packages p {
+    margin-bottom: 2px !important;
+    font-size: 11px;
+}
+
+.packages h6:hover {
+    cursor: pointer;
+}
+
+.packages .active-package::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+}
+
+.packages .choose-btn {
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 2rem;
+    border-radius: 10px;
+}
+
+/*****************OPEN GIG PAGE END**********************/
+/*****************ACTIVE ORDERS PAGE START**********************/
+.orders-options select {
+    background-color: var(--primary-color);
+    border: none;
+    overflow: none;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    /*border-radius: 8px;*/
+}
+
+.orders-options a {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 6px 10px;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.active-orders {
+    background-color: #004B35;
+    border-radius: 10px
+}
+
+.active-orders .show {
+    border: 1.5px solid #919191;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.active-orders h5 {
+    font-size: 17px;
+}
+
+.active-orders p {
+    font-size: 10px;
+}
+
+.active-orders a {
+    border: 2px solid var(--primary-color);
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.active-order-table td {
+    padding: 10px;
+    width: 25%;
+}
+
+/*****************ACTIVE ORDERS PAGE END**********************/
+/*****************PROGRAMMING SERVICES PAGE START**********************/
+.pro-language-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+}
+
+.pro-language-child {
+    border-radius: 10px;
+    background-color: #00966B;
+    box-shadow: 0px 0px 10px 5px #002D20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-language-child img {
+    width: 80px;
+}
+
+@media
+
+/*****************PROGRAMMING SERVICES PAGE END**********************/
+/*****************ORDER DETAILS PAGE START**********************/
+/*.orderdetails .indicator {
+    width: 6rem;
+    height: 7px;
+    background-color: var(--primary-color);
+}*/
+.order-confirm .indicator {
+    background-color: #919191;
+    width: 15rem;
+    height: 7px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 8px;
+}
+
+.order-confirm .steps {
+    background-color: #919191;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    display: inline-block;
+}
+
+.order-details .star-icons {
+    font-size: 16px !important;
+}
+
+.order-details .confirmation-card,
+.payments .confirmation-card,
+.place-order .confirmation-card {
+    background-color: #002D20;
+    border-radius: 5px;
+}
+
+.order-details .order-info p,
+.payments .order-info p {
+    margin-bottom: 0px !important;
+    font-size: 14px;
+}
+
+.order-details .continue-btn,
+.payments .continue-btn {
+    background-color: #00966B;
+    padding: 8px 4.5rem;
+    border-radius: 20px;
+    color: #fff
+}
+
+.order-details ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+    font-size: 13px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+}
+
+.order-details ul img {
+    margin-right: 10px;
+}
+
+.payments .form-style {
+    border: none;
+    border-bottom: 2px solid #004B35;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.order_submit_btn {
+    /*box-shadow: none;*/
+}
+
+.term-and-condition {
+    font-size: 14px;
+    width: 85% !important;
+    /*display: inline-block;*/
+}
+
+.term-and-condition a {
+    text-decoration: none;
+    color: #004B35;
+    font-weight: bold;
+}
+
+/*****************ORDER DETAILS PAGE END**********************/
+
+
 
 @media screen and (max-width: 768px) {
     .tags {
