@@ -200,6 +200,14 @@ $(document).ready(function() {
         $('.create-service-indicator-6').removeClass('active-create-service-indicator');
         $('#create_service_text_indicator_4').addClass('text-muted');
     });
+    $(this).on('click', '#Publish_my_overview', function() {
+        $('#Mockup').addClass('d-none');
+        $('#Service_done').removeClass('d-none');
+        $('.create-service-indicator-7').addClass('active-create-service-indicator');
+        $('#create_service_text_indicator_5').removeClass('text-muted');
+
+
+    });
     // CREATE SERVICES END
 
     // MANAGE ORDERS START
@@ -276,6 +284,14 @@ $(document).ready(function() {
         $('#signup-form').addClass('d-none');
     });
     // MAIN FORM IN END
+
+    $('#logged_in_user_pop_up').hide();
+    $(this).on('mouseover', '#navbar_online_user_image', function() {
+        $('#logged_in_user_pop_up').show(100);
+    });
+    $(this).on('mouseleave', '#navbar_online_user_image', function() {
+        $('#logged_in_user_pop_up').hide(200);
+    });
 
 
 

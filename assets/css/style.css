@@ -233,6 +233,14 @@ body {
     color: #00966B !important;
 }
 
+.online-mark {
+    width: 12px;
+    height: 12px;
+    background-color: #00DD34;
+    top: 12%;
+    right: 27%;
+}
+
 .tags {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -246,6 +254,34 @@ body {
 
 .tags a:hover {
     color: #00966B !important;
+}
+
+.logged-in-user-pop-up {
+    background-color: #fff;
+    z-index: 999;
+    color: #000;
+    width: 250px;
+    right: 0;
+}
+
+.logged-in-user-pop-up h6 {
+    background-color: var(--primary-color);
+    padding: 8px;
+    color: #fff;
+}
+
+.logged-in-user-pop-up ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logged-in-user-pop-up ul li {
+    margin: 1rem 0;
+}
+
+.logged-in-user-pop-up ul li a {
+    text-decoration: none;
+    color: #000 !important;
 }
 
 .login-form-model {
@@ -1030,8 +1066,6 @@ label.switch>input[type="checkbox"]:checked~span:after {
     color: var(--primary-color);
 }
 
-..service-options button {}
-
 .service-options button,
 .service-options select {
     margin-bottom: 15px !important;
@@ -1216,6 +1250,18 @@ label.switch>input[type="checkbox"]:checked~span:after {
     background-color: #00966B;
 }
 
+.create-service-done-btn {
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 200px;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    padding: 8px 0;
+    color: #fff;
+    /*cursor: pointer;*/
+
+}
 
 /*****************CREATE SERVICES PAGE END**********************/
 .manage-active-order-table p {
