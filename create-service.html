@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-0">
+                <a href="#">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white ms-2" href="chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white ms-2" href="#">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white ms-2" href="servicerequst.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white ms-2" href="servicerequst.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white ms-2" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img ">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <hr>
+    <div class="container d-lg-flex create-service-pagination">
+        <div class="me-3">
+            <div class="d-flex align-items-center create-service-indicator">
+                <div class="active-create-service-indicator"><span>1</span></div>
+                <div class="create-service-indicator-1"><span></span></div>
+            </div>
+            <p class="" id="create_service_text_indicator_1">Overview</p>
+        </div>
+        <div class="me-3 ">
+            <div class="d-flex align-items-center create-service-indicator">
+                <div class="create-service-indicator-2"><span>2</span></div>
+                <div class="create-service-indicator-3"><span></span></div>
+            </div>
+            <p class="text-muted" id="create_service_text_indicator_2">Pricing</p>
+        </div>
+        <div class="me-3 ">
+            <div class="d-flex align-items-center create-service-indicator">
+                <div class="create-service-indicator-4"><span>3</span></div>
+                <div class="create-service-indicator-5"><span></span></div>
+            </div>
+            <p class="text-muted" id="create_service_text_indicator_3">Requirements</p>
+        </div>
+        <div class="me-3">
+            <div class="d-flex align-items-center create-service-indicator">
+                <div class="create-service-indicator-6"><span>4</span></div>
+                <div class="create-service-indicator-7"><span></span></div>
+            </div>
+            <p class="text-muted" id="create_service_text_indicator_4">Mock-up Design</p>
+        </div>
+        <div class="me-3">
+            <div class="d-flex align-items-center create-service-indicator">
+                <div class="create-service-indicator-7"><span>5</span></div>
+                <!-- <div><span></span></div> -->
+            </div>
+            <p class="text-muted" id="create_service_text_indicator_5">Publish</p>
+        </div>
+    </div>
+    <!-- OVERVIEW -->
+    <div class="container " id="Overview">
+        <div class="row py-3">
+            <div class="col-md-6">
+                <h4 class="mb-2 heading-h4">Create new service Profile</h4>
+                <div class="p-3">
+                    <form class="service-form">
+                        <label for="project_title">Title</label>
+                        <input type="text" class="form-input  mb-3" name="project_title" max="90" placeholder="90 Max Characters">
+                        <div class="position-relative">
+                            <label for="project_details">Description</label>
+                            <textarea id="message_word_count" class="form-input mb-3" name="project_details" rows="3" maxlength="1200" placeholder="Looking for service..."></textarea>
+                            <div class="position-absolute text-muted" style="right: 10px;
+                            bottom: 25px; font-size: 12px;">
+                                <span id="word_count">0</span>
+                                <span>/1200</span>
+                            </div>
+                        </div>
+                        <div class="options position-relative">
+                            <img src="assets/images/category-svgrepo-com.png" class="position-absolute icon-category">
+                            <select class="w-100 select-project pb-2 mb-2 ps-5">
+                                <option class="">Select Project Category</option>
+                                <option class="">Select Project Category</option>
+                                <option class="">Select Project Category</option>
+                                <option class="">Select Project Category</option>
+                            </select>
+                            <select class="w-100 select-project pb-2 mb-3 ps-5">
+                                <option>Select Project Sub Category</option>
+                                <option>Select Project Sub Category</option>
+                                <option>Select Project Sub Category</option>
+                                <option>Select Project Sub Category</option>
+                            </select>
+                            <img src="assets/images/PICOL-category.png" class="position-absolute icon-sub-category">
+                        </div>
+                        <label>Service Search Tags</label>
+                        <div class="rounded service-search-tags d-flex mt-1">
+                            <div><span>mobile apps</span><i class="fas fa-times ms-2"></i></div>
+                            <div><span>app developer</span><i class="fas fa-times ms-2"></i></div>
+                            <div><span>iOS Apps</span><i class="fas fa-times ms-2"></i></div>
+                            <!-- <div><span>Apps Design</span><i class="fas fa-times ms-2"></i></div> -->
+                        </div>
+                        <span style="font-size: 12px;" class="text-muted">Max: 5 Tags (letters & Number only)</span>
+                        <div class="d-flex justify-content-between my-4 create-service-buttons">
+                            <div id="back_from_overview">Cancel</div>
+                            <div id="next_from_overview">Save & Continue</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 ps-5">
+                <h4 class="mb-5 text-center heading-h4">Create Professional Service Profile</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,
+                    eleifend quis magna. Sed fringilla, est at volutpat sodales, nisl eros tristique sapien, ut gravida urna
+                    lorem a odio. Sed bibendum lacinia nisl, sit amet blandit velit porta ultrices. Pellentesque vehicula maximus augue, id consequat mi. Aenean eget justo mauris.<br> Vivamus nec augue rutrum, porttitor ex a, aliquet lacus. Curabitur egestas tincidunt nunc et vestibulum. Vestibulum sit amet blandit massa, vel ornare lectus. Ut quis urna suscipit, pretium magna sed, tincidunt purus. Praesent non facilisis dui. Praesent blandit arcu velit, a placerat lorem interdum ac. Quisque sollicitudin, justo vitae fermentum commodo, orci nibh condimentum sapien, a tempus urna turpis id felis. Aliquam erat volutpat. Nam ac molestie nisi.<br>
+                    Pellentesque sodales dui sed massa porta, a volutpat nisl consequat. </p>
+            </div>
+        </div>
+    </div>
+    <!-- PRICING -->
+    <div class="container d-none my-5" id="Pricing">
+        <h4>Pricing Details</h4>
+        <div class="pricing-table ">
+            <form action="#" method="">
+                <table width="100%" class="border text-center">
+                    <tr>
+                        <td width="30%">SERVICES</td>
+                        <td>BASIC</td>
+                        <td>STANDARD</td>
+                        <td>PREMIUM</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td>
+                            <textarea name="description" placeholder="Package Name"></textarea>
+                        </td>
+                        <td>
+                            <textarea name="description" placeholder="Package Name"></textarea>
+                        </td>
+                        <td>
+                            <textarea name="description" placeholder="Package Name"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="description" placeholder="Basic details about this offer"></textarea>
+                        </td>
+                        <td>
+                            <textarea name="description" placeholder="Basic details about this offer"></textarea>
+                        </td>
+                        <td>
+                            <textarea name="description" placeholder="Basic details about this offer"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>
+                            <select>
+                                <option>Delivery</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Delivery</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>1 day</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Number of Screens</td>
+                        <td>
+                            <select>
+                                <option>Screens</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>5 Screens</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Screens</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prototyping</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                    </tr>
+                    <tr>
+                        <td>Revisions</td>
+                        <td>
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input type="text" placeholder="10 $" name=""></td>
+                        <td><input type="text" placeholder="10 $" name=""></td>
+                        <td><input type="text" placeholder="10 $" name=""></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between my-4 create-service-buttons">
+                <div id="back_from_pricing">Back</div>
+                <div id="next_from_pricing">Save & Continue</div>
+            </div>
+        </div>
+    </div>
+    <!-- REQUIREMENTS -->
+    <div class="container d-none " id="Requirements">
+        <div class="row py-3">
+            <div class="col-md-6 pt-2">
+                <h6 class="mb-2 ">Add Question for buyers to get exactly what they want to be done</h6>
+                <div class="p-3">
+                    <form class="requirement-form">
+                        <label for="project_title" class="mb-2">YOUR QUESTIONS</label>
+                        <div class="position-relative">
+                            <textarea class="w-100 rounded text-white p-3" maxlength="500" rows="5" placeholder="Enter your questions details here"></textarea>
+                            <div class="position-absolute text-muted text-counter">
+                                <span>0</span><span> / 500</span>
+                            </div>
+                        </div>
+                        <div class="add-question-button text-white mt-2 rounded d-inline-block"><i class="fas fa-plus mx-3"></i><span> Add New Question</span>
+                        </div>
+                        <div class="guidance mt-5 ps-4 p-2 rounded position-relative">
+                            <span>Kindly let me know complete app flow including wireframing</span>
+                            <i class="fas fa-ellipsis-v position-absolute" style="right: 5px; top: 10px; cursor: pointer;"></i>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-between my-4 create-service-buttons">
+                        <div id="back_from_requirements">Cancel</div>
+                        <div id="next_from_requirements">Save & Continue</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ps-5">
+                <h4 class="mb-5 heading-h4">information you need from buyers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,
+                    eleifend quis magna. Sed fringilla, est at volutpat sodales, nisl eros tristique sapien, ut gravida urna
+                    lorem a odio. Sed bibendum lacinia nisl, sit amet blandit velit porta ultrices. Pellentesque vehicula maximus augue, id consequat mi. Aenean eget justo mauris.<br> Vivamus nec augue rutrum, porttitor ex a, aliquet lacus. Curabitur egestas tincidunt nunc et vestibulum. Vestibulum sit amet blandit massa, vel ornare lectus. Ut quis urna suscipit, pretium magna sed, tincidunt purus. Praesent non facilisis dui. Praesent blandit arcu velit, a placerat lorem interdum ac. Quisque sollicitudin, justo vitae fermentum commodo, orci nibh condimentum sapien, a tempus urna turpis id felis. Aliquam erat volutpat. Nam ac molestie nisi.<br>
+                    Pellentesque sodales dui sed massa porta, a volutpat nisl consequat. </p>
+            </div>
+        </div>
+    </div>
+    <!-- MOCKUP DESIGN -->
+    <div class="container d-none " id="Mockup">
+        <div class="row py-3">
+            <div class="col-md-6 pt-2">
+                <h6 class="mb-2 ">Encourage buyers to choose your Gig by featuring a variety of your work</h6>
+                <p class="mb-1">Service Mock-up Designs (0 / 3)</p>
+                <p style="font-size: 13px;">Get noticed by the right buyers with visual examples of your services.</p>
+                <div class="d-flex justify-content-between  mockup-design-images p-2">
+                    <div class="text-center drag-file rounded pt-2">
+                        <img src="assets/icons/Icon awesome-image.png" width="30%">
+                        <p class="m-0">Drag & Drop Photo</p>
+                        <span style="font-size: 12px;">Browser Files</span>
+                    </div>
+                    <div>
+                        <img src="assets/images/2Mask Group 13@2x.png" width="100%">
+                    </div>
+                    <div>
+                        <img src="assets/images/1Mask Group 13@2x.png" width="100%">
+                    </div>
+                </div>
+                <p class="mb-1 mt-3">Documents (0 / 3)</p>
+                <p style="font-size: 13px;">Impress Buyers by work you have done. Make sure to Upload PDF format only</p>
+                <div class="d-flex justify-content-between text-center mockup-design-images p-2">
+                    <div class="text-center drag-file rounded pt-2">
+                        <img src="assets/icons/Icon awesome-image.png" width="30%">
+                        <p class="m-0">Drag & Drop Photo</p>
+                        <span style="font-size: 12px;">Browser Files</span>
+                    </div>
+                    <div>
+                        <img src="assets/icons/Icon awesome-file-pdf.png" width="50%">
+                    </div>
+                    <div>
+                        <img src="assets/icons/Icon awesome-file-pdf.png" width="50%">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="d-flex justify-content-between my-4 create-service-buttons">
+                        <div id="back_from_mockup_design">Cancel</div>
+                        <div id="Publish_my_overview">Publish My Service</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ps-5">
+                <h4 class="mb-5 heading-h4">information you need from buyers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,
+                    eleifend quis magna. Sed fringilla, est at volutpat sodales, nisl eros tristique sapien, ut gravida urna
+                    lorem a odio. Sed bibendum lacinia nisl, sit amet blandit velit porta ultrices. Pellentesque vehicula maximus augue, id consequat mi. Aenean eget justo mauris.<br> Vivamus nec augue rutrum, porttitor ex a, aliquet lacus. Curabitur egestas tincidunt nunc et vestibulum. Vestibulum sit amet blandit massa, vel ornare lectus. Ut quis urna suscipit, pretium magna sed, tincidunt purus. Praesent non facilisis dui. Praesent blandit arcu velit, a placerat lorem interdum ac. Quisque sollicitudin, justo vitae fermentum commodo, orci nibh condimentum sapien, a tempus urna turpis id felis. Aliquam erat volutpat. Nam ac molestie nisi.<br>
+                    Pellentesque sodales dui sed massa porta, a volutpat nisl consequat. </p>
+            </div>
+        </div>
+    </div>
+    <!------------------ FOOTER START ------------------>
+    <div class="container-fluid footer pt-3">
+        <h2 class="text-center fw-bold">With one click hire the best Talents</h2>
+        <!-- CARD ROW -->
+        <div class="p-5">
+            <div class="row text-center footer-card mt-4">
+                <div class="col-md-3 ">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/Group 9069@2x.png" width="40%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Post a service</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/work-on-laptop-work-job-effort-svgrepo-com@2x.png" width="35%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Hire Best seller</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/banking-secure-payment-svgrepo-com@2x.png" width="30%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Pay securely</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/delivery-svgrepo-com (4)@2x.png" width="30%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Get delivery</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+            </div>
+        </div>
+        <!-- LINKS ROW -->
+        <div class="p-5">
+            <div class="row footer-links">
+                <div class="col-md-5">
+                    <h4 class="fw-bold mb-3">Linkeble</h4>
+                    <a href="#">Categories</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Service request</a>
+                    <a href="#">Top services</a>
+                    <a href="#">Payments</a>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3">About</h4>
+                    <a href="#">About us</a>
+                    <a href="#">How it works?</a>
+                    <a href="#">News</a>
+                    <a href="#">Jobs</a>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3">Terms</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Fees and Charges</a>
+                    <a href="#">Copyright Policy</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center fw-bold">Get the Linkeble App now on:</h4>
+        <div class="text-center my-4">
+            <img src="assets/images/Group 9085.png" class="me-5" width="150px">
+            <img src="assets/images/Group 9086.png" class="ms-5" width="150px">
+        </div>
+        <div class="text-center w-50 mx-auto footer-social-icons">
+            <div class="d-flex justify-content-around">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+        </div>
+        <div class="px-5 my-4">
+            <hr>
+        </div>
+        <!-- LAST ROW -->
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/Linkeble PNG logo.png" width="150px">
+            </div>
+            <div class="col-md-6 text-center">
+                <p>Linkeble ® is a registered Trademark of Linkeble Technology
+                    Copyright © 2021 Linkeble Technology </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                <div>
+                    <i class="fas fa-globe"></i>
+                    <span>English</span>
+                </div>
+                <div>
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>USD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------ FOOTER END ------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
