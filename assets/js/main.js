@@ -226,6 +226,14 @@ $(document).ready(function() {
         $('.create-service-indicator-6').removeClass('active-create-service-indicator');
         $('#create_service_text_indicator_4').addClass('text-muted');
     });
+    $(this).on('click', '#Publish_my_overview', function() {
+        $('#Mockup').addClass('d-none');
+        $('#Service_done').removeClass('d-none');
+        $('.create-service-indicator-7').addClass('active-create-service-indicator');
+        $('#create_service_text_indicator_5').removeClass('text-muted');
+
+
+    });
     // CREATE SERVICES END
 
     // MANAGE ORDERS START
@@ -279,11 +287,11 @@ $(document).ready(function() {
 
     });
     $(this).on('click', '#rejected_btn_of_services_info', function() {
-        $('#active_active_section').addClass('d-none');
         $('#services_active_section').addClass('d-none');
+        $('#services_pause_section').addClass('d-none');
+        $('#services_rejected_section').removeClass('d-none');
         $('#rejected_btn_of_services_info').removeClass('d-none');
         $('#pause_btn_of_services_info').removeClass('active');
-        $('#services_rejected_section').removeClass('d-none');
         $('#pause_btn_of_services_info').html('Pause');
         $('#active_btn_of_services_info').removeClass('active');
         $('#active_btn_of_services_info').html('Active');
@@ -294,7 +302,15 @@ $(document).ready(function() {
 
     // SERVICES INFO PAGE END
 
-    
+
+
+    $('#logged_in_user_pop_up').hide();
+    $(this).on('mouseover', '#navbar_online_user_image', function() {
+        $('#logged_in_user_pop_up').show(100);
+    });
+    $(this).on('mouseleave', '#navbar_online_user_image', function() {
+        $('#logged_in_user_pop_up').hide(200);
+    });
 
 
 
