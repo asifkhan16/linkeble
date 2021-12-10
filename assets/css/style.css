@@ -124,7 +124,8 @@ body {
     top: 55%;
     left: 80%;
     transform: translate(-55%, -50%);
-    z-index: 9999
+    z-index: 9999;
+    overflow: hidden;
 }
 
 .become-seller-model {
@@ -134,7 +135,8 @@ body {
     top: 55%;
     left: 50%;
     transform: translate(-55%, -50%);
-    z-index: 9999
+    z-index: 9999;
+    overflow-y: hidden;
 }
 
 .become-seller-sub-btn {
@@ -147,6 +149,7 @@ body {
 .become-seller-sub-btn:hover {
     color: #fff;
 }
+
 .digit-group input {
     color: white !important;
     width: 30px !important;
@@ -155,15 +158,17 @@ body {
     border-radius: 5px;
     text-align: center;
 }
+
 @media screen and (max-width: 768px) {
     .login-form-model {
-        /*width: 380px;*/
+        width: 95%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .become-seller-model {
+        width: 95%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -217,7 +222,7 @@ body {
 .login-form .orsignin::before {
     content: "";
     position: absolute;
-    width: 7.4rem;
+    width: 6rem;
     height: 1px;
     background-color: var(--primary-color);
     left: -7.8rem;
@@ -231,7 +236,7 @@ body {
 .login-form .orsignin::after {
     content: "";
     position: absolute;
-    width: 7.4rem;
+    width: 6rem;
     height: 1px;
     background-color: var(--primary-color);
     right: -7.8rem;
