@@ -147,7 +147,14 @@ body {
 .become-seller-sub-btn:hover {
     color: #fff;
 }
-
+.digit-group input {
+    color: white !important;
+    width: 30px !important;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+}
 @media screen and (max-width: 768px) {
     .login-form-model {
         /*width: 380px;*/
