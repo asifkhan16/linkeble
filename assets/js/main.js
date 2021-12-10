@@ -51,6 +51,9 @@ $(document).ready(function() {
     $(this).on("click", "#nav-sign-btn", function() {
         $("#login-form").removeClass("d-none");
     });
+    $(this).on("click", "#become-seller-btn", function() {
+        $("#become-seller-section").removeClass("d-none");
+    });
     $(this).on("click", "#join-btn", function() {
         $("#login-form").addClass("d-none");
         $("#signup-form").removeClass("d-none");
@@ -63,6 +66,7 @@ $(document).ready(function() {
         $("#login-form").addClass("d-none");
         $("#forgot-form").removeClass("d-none");
     });
+
     // MAIN FORM IN START
     $(this).on('click', '#exit_sign_in_model', function() {
         $('#login-form').addClass('d-none');
@@ -76,6 +80,9 @@ $(document).ready(function() {
     $(this).on('click', '#back_forgot_model', function() {
         $('#forgot-form').addClass('d-none');
         $('#login-form').removeClass('d-none');
+    });
+    $(this).on("click", "#exit_become_seller_model", function() {
+        $("#become-seller-section").addClass("d-none");
     });
     // MAIN FORM IN END
     //    START-----  FUNCTIONS FOR CHOOSEN FILE IN SERVICES PAGE 

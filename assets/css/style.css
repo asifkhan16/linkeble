@@ -89,9 +89,33 @@ body {
     z-index: 9999
 }
 
+.become-seller-model {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 400px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    z-index: 9999
+}
+
+.become-seller-sub-btn {
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.become-seller-sub-btn:hover{
+    color: #fff;
+}
 @media screen and (max-width: 768px) {
     .login-form-model {
         /*width: 380px;*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .become-seller-model{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
