@@ -62,11 +62,34 @@ $(document).ready(function() {
         $("#login-form").removeClass("d-none");
         $("#signup-form").addClass("d-none");
     });
+    $(this).on("click", "#form-sign-in-btn", function(e) {
+        e.preventDefault();
+        $("#login-form").addClass("d-none");
+        $("#become-seller-section").removeClass("d-none");
+    });
     $(this).on("click", "#forgot-btn", function() {
         $("#login-form").addClass("d-none");
         $("#forgot-form").removeClass("d-none");
     });
+    $(this).on("click", "#send-code-btn", function(e) {
+        e.preventDefault();
+        $("#forgot-form").addClass("d-none");
+        $("#get-otp-form").removeClass("d-none");
+    });
+    $(this).on("click", "#verify-and-continue-btn", function(e) {
+        e.preventDefault();
+        $("#get-otp-form").addClass("d-none");
+        $("#change-pwd-form").removeClass("d-none");
+    });
+    $(this).on("click", "#change-pwd-btn", function(e) {
+        e.preventDefault();
+        $("#change-pwd-form").addClass("d-none");
+        $("#login-form").removeClass("d-none");
+    });
 
+    $(this).on("click", "#exit_become_seller_model", function() {
+        $("#become-seller-section").addClass("d-none");
+    });
     // MAIN FORM IN START
     $(this).on('click', '#exit_sign_in_model', function() {
         $('#login-form').addClass('d-none');
@@ -81,10 +104,50 @@ $(document).ready(function() {
         $('#forgot-form').addClass('d-none');
         $('#login-form').removeClass('d-none');
     });
-    $(this).on("click", "#exit_become_seller_model", function() {
-        $("#become-seller-section").addClass("d-none");
+    
+    $(this).on("click", "#exit_get_otp_model", function() {
+        $("#get-otp-form").addClass("d-none");
+    });
+    $(this).on('click', '#back_get_otp_model', function() {
+        $('#get-otp-form').addClass('d-none');
+        $('#forgot-form').removeClass('d-none');
+    });
+
+    $(this).on("click", "#exit_change_pwd_model", function() {
+        $("#change-pwd-form").addClass("d-none");
     });
     // MAIN FORM IN END
+    /////////////////////////
+    // FOR OTP MESSAGE
+    $('.digit-group').find('input').each(function() {
+        $(this).attr('maxlength', 1);
+        $(this).on('keyup', function(e) {
+            var parent = $($(this).parent());
+
+            if (e.keyCode === 8 || e.keyCode === 37) {
+                var prev = parent.find('input#' + $(this).data('previous'));
+
+                if (prev.length) {
+                    $(prev).select();
+                }
+            } else if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+                var next = parent.find('input#' + $(this).data('next'));
+
+                if (next.length) {
+                    $(next).select();
+                } else {
+                    if (parent.data('autosubmit')) {
+                        parent.submit();
+                    }
+                }
+            }
+        });
+    });
+
+    $(this).on('click', '#reset_OTP_number', function() {
+        $('.digit-group input').val('');
+
+    });
     //    START-----  FUNCTIONS FOR CHOOSEN FILE IN SERVICES PAGE 
     $(this).on("click", "#file-upload-btn", function() {
         $("#file-upload").click();
