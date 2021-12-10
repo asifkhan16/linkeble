@@ -302,16 +302,20 @@ $(document).ready(function() {
 
     // SERVICES INFO PAGE END
 
-
-
     $('#logged_in_user_pop_up').hide();
+    $('#bell_pop_up').hide();
     $(this).on('mouseover', '#navbar_online_user_image', function() {
         $('#logged_in_user_pop_up').show(100);
     });
     $(this).on('mouseleave', '#navbar_online_user_image', function() {
-        $('#logged_in_user_pop_up').hide(200);
+        $('#logged_in_user_pop_up').hide();
     });
-
+    $(this).on('mouseover', '#navbar_bell_pop_up', function() {
+        $('#bell_pop_up').show(100);
+    });
+    $(this).on('mouseleave', '#navbar_bell_pop_up', function() {
+        $('#bell_pop_up').hide();
+    });
 
 
 
