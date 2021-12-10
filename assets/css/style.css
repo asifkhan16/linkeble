@@ -105,9 +105,11 @@ body {
     color: #fff;
     background-color: var(--primary-color);
 }
-.become-seller-sub-btn:hover{
+
+.become-seller-sub-btn:hover {
     color: #fff;
 }
+
 @media screen and (max-width: 768px) {
     .login-form-model {
         /*width: 380px;*/
@@ -115,7 +117,8 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .become-seller-model{
+
+    .become-seller-model {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -1241,7 +1244,7 @@ label.switch>input[type="checkbox"]:checked~span:after {
 }
 
 .active-order-table td:nth-child(2) {
-    width: 30%
+    width: 25%
 }
 
 .active-order-table .name-and-info h5 {
