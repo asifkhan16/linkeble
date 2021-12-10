@@ -317,6 +317,22 @@ $(document).ready(function() {
         $('#bell_pop_up').hide();
     });
 
+    ///////// 
+    $(this).on('click', '#select_language', function() {
+        $('#language_pop_up').removeClass('d-none');
+    });
+
+    $(this).on('click', '#close_lang_popup', function() {
+        $('#language_pop_up').addClass('d-none');
+    });
+    $(this).on('click', '#select_currency', function() {
+        $('#currency_pop_up').removeClass('d-none');
+    })
+    $(this).on('click', '#close_currency_popup', function() {
+        $('#currency_pop_up').addClass('d-none');
+    });
+
+
 
 
 
