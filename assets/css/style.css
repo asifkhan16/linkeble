@@ -1661,3 +1661,64 @@ label.switch>input[type="checkbox"]:checked~span:after {
         margin-bottom: 20px;
     }
 }
+
+/*   ACCOUNT PAGE START  */
+.account-details {
+    background-color: var(--secondary-color);
+}
+
+.account-details input[type="text"],
+.account-details input[type="email"],
+.account-details select {
+    width: 100%;
+    background-color: var(--secondary-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.account-details input[type="submit"] {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 15rem;
+    border-radius: 40px;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+#notification_section .notification-options {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+}
+
+.notification-list {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .notification-list {
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   ACCOUNT PAGE END  */
