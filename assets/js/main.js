@@ -329,6 +329,7 @@ $(document).ready(function() {
     // SERVICES INFO PAGE START
     $(this).on('click', '#pause_btn_of_services_info', function() {
         $('#services_active_section').addClass('d-none');
+        $('#services_rejected_section').addClass('d-none');
         $('#services_pause_section').removeClass('d-none');
         $('#active_btn_of_services_info').removeClass('active');
         $('#active_btn_of_services_info').html('Active');
@@ -341,6 +342,7 @@ $(document).ready(function() {
     $(this).on('click', '#active_btn_of_services_info', function() {
         $('#services_active_section').removeClass('d-none');
         $('#services_pause_section').addClass('d-none');
+        $('#services_rejected_section').addClass('d-none');
         $('#pause_btn_of_services_info').removeClass('active');
         $('#pause_btn_of_services_info').html('Pause');
         $('#rejected_btn_of_services_info').removeClass('active');
@@ -394,6 +396,48 @@ $(document).ready(function() {
     $(this).on('click', '#close_currency_popup', function() {
         $('#currency_pop_up').addClass('d-none');
     });
+
+
+    // ACCOUNT PAGE START
+    $(this).on('click', '#account_detail_btn', function() {
+        $('#notification_section').addClass('d-none');
+        $('#billing_address_section').addClass('d-none');
+        $('#account_details_section').removeClass('d-none');
+        $('#account_notification_btn').removeClass('active');
+        $('#account_billing_btn').removeClass('active');
+        $('#account_notification_btn').html('Notifications');
+        $('#account_billing_btn').html('Billing Address');
+        $('#account_detail_btn').html('Account Details<i class="fas fa-chevron-right ms-4"></i>');
+        $('#account_detail_btn').addClass('active');
+
+    });
+
+    $(this).on('click', '#account_notification_btn', function() {
+        $('#account_details_section').addClass('d-none');
+        $('#billing_address_section').addClass('d-none');
+        $('#notification_section').removeClass('d-none');
+        $('#account_detail_btn').removeClass('active');
+        $('#account_billing_btn').removeClass('active');
+        $('#account_detail_btn').html('Account Details');
+        $('#account_billing_btn').html('Billing Address');
+        $('#account_notification_btn').html('Notifications<i class="fas fa-chevron-right ms-4"></i>');
+        $('#account_notification_btn').addClass('active');
+    });
+
+    $(this).on('click', '#account_billing_btn', function() {
+        $('#account_details_section').addClass('d-none');
+        $('#notification_section').addClass('d-none');
+        $('#billing_address_section').removeClass('d-none');
+        $('#account_detail_btn').removeClass('active');
+        $('#account_notification_btn').removeClass('active');
+        $('#account_detail_btn').html('Account Details');
+        $('#account_notification_btn').html('Notifications');
+        $('#account_billing_btn').html('Billing Address<i class="fas fa-chevron-right ms-4"></i>');
+        $('#account_billing_btn').addClass('active');
+    });
+
+
+    // ACCOUNT PAGE END
 
 
 
