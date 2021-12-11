@@ -104,7 +104,7 @@ $(document).ready(function() {
         $('#forgot-form').addClass('d-none');
         $('#login-form').removeClass('d-none');
     });
-    
+
     $(this).on("click", "#exit_get_otp_model", function() {
         $("#get-otp-form").addClass("d-none");
     });
@@ -439,7 +439,17 @@ $(document).ready(function() {
 
     // ACCOUNT PAGE END
 
-
+    // PLACE ORDER PAGE START
+    $(this).on('click', '#order_place_header', function() {
+        $('#order_place_body').slideToggle();
+    });
+    $(this).on('click', '#service_requirement_header', function() {
+        $('#service_requirement_body').slideToggle();
+    });
+    $(this).on('click', '#service_delivery_header', function() {
+        $('#service_delivery_body').slideToggle();
+    });
+    // PLACE ORDER PAGE END
 
 
 

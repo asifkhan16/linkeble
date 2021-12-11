@@ -1719,18 +1719,64 @@ label.switch>input[type="checkbox"]:checked~span:after {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   ACCOUNT PAGE END  */
+
+/*   PLACE ORDER PAGE START */
+.vertical-line {
+    width: 5px;
+    /*height: 100vh;*/
+    background-color: var(--primary-color);
+
+}
+
+.icon-image {
+    position: absolute;
+    top: 0;
+    left: -5.2rem;
+    width: 50px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    background-color: #000
+}
+
+.order-details-header {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.order-details-body ul {
+    list-style: none;
+}
+
+.order-details-body ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-details-body ul li .fa-check {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   PLACE ORDER PAGE END  */
