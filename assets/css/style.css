@@ -1794,38 +1794,98 @@ label.switch>input[type="checkbox"]:checked~span:after {
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   PLACE ORDER PAGE END  */
+
+/*   BUYER REQUEST PAGE START*/
+.buyer-request-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.buyer-request-top select {
+    background-color: var(--primary-color);
+    padding: 3px 15px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.buyer-request table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+}
+
+.buyer-request table tr td:nth-child(3) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.buyer-request table tr td {
+    padding: 10px 5px;
+    margin: 0 10px;
+    /*border: 1px solid green;*/
+}
+
+.buyer-request table tr td a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.send-buyer-request {
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .send-buyer-request {
+        width: 95%;
+    }
+}
+
+.send-buyer-request a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.send-buyer-request form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+
+}
+
+.buyer-request-details>div {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 3px 0 8px 0;
+}
+
+.send-buyer-request form input {
+    display: block;
+    margin: 2rem auto;
+    width: 15rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+
+}
+
+
+
+
+
+/*   BUYER REQUEST PAGE END*/
