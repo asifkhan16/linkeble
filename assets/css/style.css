@@ -1724,9 +1724,14 @@ label.switch>input[type="checkbox"]:checked~span:after {
 /*   PLACE ORDER PAGE START */
 .vertical-line {
     width: 5px;
-    /*height: 100vh;*/
     background-color: var(--primary-color);
 
+}
+
+@media screen and (max-width: 768px) {
+    .vertical-line {
+        display: none;
+    }
 }
 
 .icon-image {
@@ -1758,6 +1763,50 @@ label.switch>input[type="checkbox"]:checked~span:after {
 .order-details-body ul li .fa-check {
     color: var(--primary-color);
 }
+
+.order-file-images img:first-child {
+    width: 80px;
+
+}
+
+.order-file-images img:last-child {
+    width: 30px;
+}
+
+#my_review_body form textarea {
+    display: block;
+    width: 90%;
+    background-color: #000;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#my_review_body form input {
+    width: 15rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
