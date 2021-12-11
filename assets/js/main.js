@@ -449,6 +449,18 @@ $(document).ready(function() {
     $(this).on('click', '#service_delivery_header', function() {
         $('#service_delivery_body').slideToggle();
     });
+    $(this).on('click', '#service_delivery_two_header', function() {
+        $('#service_delivery_two_body').slideToggle();
+    });
+    $(this).on('click', '#service_delivery_three_header', function() {
+        $('#service_delivery_three_body').slideToggle();
+    });
+    $(this).on('click', '#client_rating_header', function() {
+        $('#client_rating_body').slideToggle();
+    });
+    $(this).on('click', '#my_review_header', function() {
+        $('#my_review_body').slideToggle();
+    });
     // PLACE ORDER PAGE END
 
 
