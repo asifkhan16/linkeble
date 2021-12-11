@@ -1709,6 +1709,10 @@ label.switch>input[type="checkbox"]:checked~span:after {
     padding: 10px 0;
 }
 
+.notification-options {
+    width: 100%;
+}
+
 .notification-list {
     width: 50%;
 }
@@ -1840,6 +1844,7 @@ label.switch>input[type="checkbox"]:checked~span:after {
 }
 
 .send-buyer-request {
+    margin: 0 auto;
     width: 70%;
 }
 
@@ -1870,7 +1875,7 @@ label.switch>input[type="checkbox"]:checked~span:after {
     padding: 3px 0 8px 0;
 }
 
-.send-buyer-request form input {
+.send-buyer-request form input[type="submit"] {
     display: block;
     margin: 2rem auto;
     width: 15rem;
