@@ -310,6 +310,11 @@ body {
     padding: 10px;
 }
 
+.slider .slides a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .slides p {
     font-size: 14px;
 }
@@ -317,6 +322,11 @@ body {
 .slider-card {
     background-color: #000F0B;
     border-radius: 10px;
+}
+
+.slider-card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .second-slider-card p {
@@ -343,6 +353,11 @@ body {
 .rectangle-slider-card {
     background-image: linear-gradient(to right, #003D2B, #00966B);
     border-radius: 10px;
+}
+
+.rectangle-slider-card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .rectangle-slides {
@@ -642,6 +657,8 @@ select:focus {
     width: 70%;
 }
 
+
+
 .services .gig p {
     font-size: 14px;
     margin-bottom: 4px !important;
@@ -660,6 +677,17 @@ select:focus {
 
 .gig-content .star-icons {
     font-size: 16px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .services .gig {
+        width: 100%;
+    }
+
+    .gig-content .star-icons {
+        margin-bottom: 20px;
+        font-size: 12px !important;
+    }
 }
 
 .reviews-circle {
