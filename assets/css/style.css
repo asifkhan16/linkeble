@@ -1456,24 +1456,34 @@ label.switch>input[type="checkbox"]:checked~span:after {
 
 /*****************ACTIVE ORDERS PAGE END**********************/
 /*****************PROGRAMMING SERVICES PAGE START**********************/
-.pro-language-parent {
+
+.prog-services-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 5rem;
-    grid-row-gap: 5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 2rem;
 }
 
-.pro-language-child {
-    border-radius: 10px;
-    background-color: #00966B;
-    box-shadow: 0px 0px 10px 5px #002D20;
+.prog-services-list .prog-service div {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #00966B;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px #002D20;
 }
 
-.pro-language-child img {
-    width: 80px;
+.prog-services-list .prog-service div img {
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .prog-services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*****************PROGRAMMING SERVICES PAGE END**********************/
@@ -1917,8 +1927,29 @@ label.switch>input[type="checkbox"]:checked~span:after {
 
 }
 
-
-
-
-
 /*   BUYER REQUEST PAGE END*/
+
+/*   ABOUT US START  */
+.about-us-header {
+    background-image: url("../icons/Mask Group 110.png");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+}
+
+.about-us-header h3 {
+    letter-spacing: 4px;
+}
+
+.about-us-content h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-header h3 {
+        letter-spacing: 0px;
+    }
+}
+
+/*   ABOUT US END  */
