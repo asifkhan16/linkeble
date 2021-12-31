@@ -310,6 +310,11 @@ body {
     padding: 10px;
 }
 
+.slider .slides a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .slides p {
     font-size: 14px;
 }
@@ -317,6 +322,11 @@ body {
 .slider-card {
     background-color: #000F0B;
     border-radius: 10px;
+}
+
+.slider-card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .second-slider-card p {
@@ -343,6 +353,11 @@ body {
 .rectangle-slider-card {
     background-image: linear-gradient(to right, #003D2B, #00966B);
     border-radius: 10px;
+}
+
+.rectangle-slider-card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .rectangle-slides {
@@ -642,6 +657,8 @@ select:focus {
     width: 70%;
 }
 
+
+
 .services .gig p {
     font-size: 14px;
     margin-bottom: 4px !important;
@@ -660,6 +677,17 @@ select:focus {
 
 .gig-content .star-icons {
     font-size: 16px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .services .gig {
+        width: 100%;
+    }
+
+    .gig-content .star-icons {
+        margin-bottom: 20px;
+        font-size: 12px !important;
+    }
 }
 
 .reviews-circle {
@@ -1428,24 +1456,34 @@ label.switch>input[type="checkbox"]:checked~span:after {
 
 /*****************ACTIVE ORDERS PAGE END**********************/
 /*****************PROGRAMMING SERVICES PAGE START**********************/
-.pro-language-parent {
+
+.prog-services-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 5rem;
-    grid-row-gap: 5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 2rem;
 }
 
-.pro-language-child {
-    border-radius: 10px;
-    background-color: #00966B;
-    box-shadow: 0px 0px 10px 5px #002D20;
+.prog-services-list .prog-service div {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #00966B;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px #002D20;
 }
 
-.pro-language-child img {
-    width: 80px;
+.prog-services-list .prog-service div img {
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .prog-services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*****************PROGRAMMING SERVICES PAGE END**********************/
@@ -1709,6 +1747,10 @@ label.switch>input[type="checkbox"]:checked~span:after {
     padding: 10px 0;
 }
 
+.notification-options {
+    width: 100%;
+}
+
 .notification-list {
     width: 50%;
 }
@@ -1794,38 +1836,120 @@ label.switch>input[type="checkbox"]:checked~span:after {
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   PLACE ORDER PAGE END  */
+
+/*   BUYER REQUEST PAGE START*/
+.buyer-request-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.buyer-request-top select {
+    background-color: var(--primary-color);
+    padding: 3px 15px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.buyer-request table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+}
+
+.buyer-request table tr td:nth-child(3) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.buyer-request table tr td {
+    padding: 10px 5px;
+    margin: 0 10px;
+    /*border: 1px solid green;*/
+}
+
+.buyer-request table tr td a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.send-buyer-request {
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .send-buyer-request {
+        width: 95%;
+    }
+}
+
+.send-buyer-request a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.send-buyer-request form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+
+}
+
+.buyer-request-details>div {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 3px 0 8px 0;
+}
+
+.send-buyer-request form input[type="submit"] {
+    display: block;
+    margin: 2rem auto;
+    width: 15rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+
+}
+
+/*   BUYER REQUEST PAGE END*/
+
+/*   ABOUT US START  */
+.about-us-header {
+    background-image: url("../icons/Mask Group 110.png");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+}
+
+.about-us-header h3 {
+    letter-spacing: 4px;
+}
+
+.about-us-content h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-header h3 {
+        letter-spacing: 0px;
+    }
+}
+
+/*   ABOUT US END  */
