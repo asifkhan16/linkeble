@@ -64,8 +64,26 @@ body {
     background-color: #fff;
     z-index: 999;
     color: #000;
-    width: 250px;
+    width: 300px;
     right: 0;
+}
+
+.logged-in-user-pop-up .profile-indicator a {
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 4px;
+    width: 50%;
+}
+
+.logged-in-user-pop-up .profile-indicator a:hover {
+    color: #000 !important;
+}
+
+.logged-in-user-pop-up .active-profile {
+    color: var(--primary-color);
+    background-color: #fff;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -407,15 +425,18 @@ body {
     border-radius: 50%;
     background-color: #fff;
 }
-.view-all-btn{
+
+.view-all-btn {
     color: var(--primary-color);
     text-decoration: none;
     font-size: 18px;
 }
-.view-all-btn:hover{
+
+.view-all-btn:hover {
     color: var(--primary-color);
 }
-.more-services-started{
+
+.more-services-started {
     background-color: #006875;
     border-radius: 10px;
 }
@@ -427,15 +448,18 @@ body {
     font-weight: bold;
     background-color: var(--primary-color);
 }
-.submit-request-btn{
+
+.submit-request-btn {
     padding: 4px 15px;
     border-radius: 25px;
     color: #fff;
     background-color: var(--primary-color);
 }
-.submit-request-btn:hover{
+
+.submit-request-btn:hover {
     color: #fff;
 }
+
 .footer {
     background-color: #002D20;
 }
@@ -461,15 +485,24 @@ body {
 }
 
 #language_pop_up {
-    width: 30%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.lang-pop-up-body {
     border-radius: 40px;
+    width: 30%;
 }
 
 @media screen and (max-width: 768px) {
-    #language_pop_up {
+    .lang-pop-up-body {
         width: 90%
     }
 }
@@ -513,10 +546,19 @@ body {
 }
 
 #currency_pop_up {
-    width: 30%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.currency-pop-up-body {
+    width: 30%;
     border-radius: 40px;
 }
 
@@ -528,7 +570,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    #currency_pop_up {
+    .currency-pop-up-body {
         width: 90%
     }
 }

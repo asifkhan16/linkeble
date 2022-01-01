@@ -368,7 +368,9 @@ $(document).ready(function() {
     // SERVICES INFO PAGE END
 
     $('#logged_in_user_pop_up').hide();
+    $('#logged_in_user_pop_up').removeClass('d-none');
     $('#bell_pop_up').hide();
+    $('#bell_pop_up').removeClass('d-none');
     $(this).on('mouseover', '#navbar_online_user_image', function() {
         $('#logged_in_user_pop_up').show(100);
     });

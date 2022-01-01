@@ -45,7 +45,7 @@
                         </li>
                         <li id="navbar_bell_pop_up" class="nav-item position-relative">
                             <a class="nav-link text-white ms-3" href="#"><i class="fas fa-bell"></i></a>
-                            <div id="bell_pop_up" class="rounded px-3 py-2 position-absolute">
+                            <div id="bell_pop_up" class="rounded px-3 py-2 position-absolute d-none">
                                 <div class="d-flex align-items-center mb-4">
                                     <img src="assets/icons/NoPath — копия (43).png">
                                     <div class="ps-3">
@@ -81,14 +81,29 @@
                                 <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
                                 <span class="position-absolute rounded-circle d-block online-mark"></span>
                             </a>
-                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded px-4 position-absolute">
-                                <h6 class="text-center my-4 rounded">Balance: USD $ 133</h6>
-                                <ul>
-                                    <li><a href="account.html"> My Profile</a></li>
-                                    <li><a href="analytics.html"> Analytics</a></li>
-                                    <li><a href="servicerequst.html"> Buyer Service Request</a></li>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a class="active-profile" href="#" style="">Buyer Mode</a>
+                                        <a href="seller-dashboard.html">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="account.html">My Profile</a></li>
+                                    <li><a href="analytics.html">My Selling Dashboard</a></li>
+                                    <li><a href="servicerequst.html">Post Service Request</a></li>
+                                    <li><a href="#">Posted Requests</a></li>
                                     <li><a href="#"> Settings</a></li>
                                     <li><a href="#"> Help/Support</a></li>
+                                    <li id="select_language" style="cursor: pointer;">
+                                        <i class="fas fa-globe"></i>
+                                        <span>English</span>
+                                    </li>
+                                    <li id="select_currency" style="cursor: pointer;">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span>USD</span>
+                                    </li>
                                     <li><a href="#"> Logout</a></li>
                                 </ul>
                             </div>
@@ -116,12 +131,12 @@
     <!-------------- FIRST SLIDER START ------------->
     <div class="container">
         <div class="col-md-8">
-            <h1>My Favourites  </h1>
+            <h1>My Favourites </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet, eleifend quis magna. </p>
         </div>
     </div>
     <div class="container pt-5">
-        <h3 class="my-4">Favourites  Services</h3>
+        <h3 class="my-4">Favourites Services</h3>
         <div class="slider">
             <div class="slides">
                 <div class="slider-card">
@@ -263,7 +278,6 @@
     <!-------------- SECOND SLIDER END ------------->
     <!-------------- SERVICES START ---------------->
     <div class="container">
-        
         <h3>Continue browsing history</h3>
         <p>Recently viewed Services</p>
         <div class="services-card py-5">
@@ -607,7 +621,6 @@
             </div>
         </div>
     </div>
-
     <div class="container pt-2">
         <h3 class="my-4">Most popular Gigs in UX Design </h3>
         <div class="slider">

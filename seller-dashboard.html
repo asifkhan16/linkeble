@@ -33,7 +33,7 @@
                             <a class="nav-link text-white " href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white ms-3" href="chat.html">Chat</a>
+                            <a class="nav-link text-white ms-3" href="send-offer-chat.html">Chat</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white ms-3" href="analytics.html">Analytics</a>
@@ -46,7 +46,7 @@
                         </li>
                         <li id="navbar_bell_pop_up" class="nav-item position-relative">
                             <a class="nav-link text-white ms-3" href="#"><i class="fas fa-bell"></i></a>
-                            <div id="bell_pop_up" class="rounded px-3 py-2 position-absolute">
+                            <div id="bell_pop_up" class="rounded px-3 py-2 position-absolute d-none">
                                 <div class="d-flex align-items-center mb-4">
                                     <img src="assets/icons/NoPath — копия (43).png">
                                     <div class="ps-3">
@@ -82,12 +82,19 @@
                                 <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
                                 <span class="position-absolute rounded-circle d-block online-mark"></span>
                             </a>
-                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded px-4 position-absolute">
-                                <h6 class="text-center my-4 rounded">Balance: USD $ 133</h6>
-                                <ul>
-                                    <li><a href="account.html"> My Profile</a></li>
-                                    <li><a href="analytics.html"> Analytics</a></li>
-                                    <li><a href="servicerequst.html"> Buyer Service Request</a></li>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a href="submit-services-request.html" style="">Buyer Mode</a>
+                                        <a class="active-profile" href="#">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="account.html">My Profile</a></li>
+                                    <li><a href="analytics.html">My Selling Dashboard</a></li>
+                                    <li><a href="servicerequst.html">Post Service Request</a></li>
+                                    <li><a href="#">Posted Requests</a></li>
                                     <li><a href="#"> Settings</a></li>
                                     <li><a href="#"> Help/Support</a></li>
                                     <li><a href="#"> Logout</a></li>
@@ -562,58 +569,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- <script>
-    const ctx = document.getElementById('myChart').getContext('2d');
-    var xValues = [0, 5, 10, 15, 20, 25, 30];
-    var yValues = [0, 100, 200, 300, 400, 500, 600, ];
-    const myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: xValues,
-            datasets: [{
-                fill: false,
-                lineTension: 0,
-                backgroundColor: "rgba(255,0,255,1.0)",
-                borderColor: "rgba(0,0,255,0.1)",
-                data: yValues,
-                // label: '# of Votes',
-                data: '200',
-                backgroundColor: [
-                    'rgba(0, 0, 0, 1)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 255, 255, 1)',
-                    'rgba(255, 1, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 2
-            }]
-        },
-        options: {
-            legend: { display: false },
-            scales: {
-                x: {
-                    // beginAtZero: false
-                },
-                y: {
-                    grid: {
-                        color: 'red',
-                        borderColor: 'grey',
-                        tickColor: 'grey'
-                    }
-                }
-            }
-        }
-    });
-    </script> -->
     <script>
     const labels = [
         '0',
