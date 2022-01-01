@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Services Request | Linkeble</title>
+    <title>View All | Linkeble</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a href="index.html">
+                <a href="index.hmtl">
                     <img src="assets/images/Linkeble PNG logo.png" width="150px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +35,16 @@
                     </form>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white d-flex align-items-center">
                         <li class="nav-item">
+                            <a class="nav-link text-white " href="index.html">Linkenble</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-white ms-3" href="chat.html">Chat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white ms-3" href="my-order.html">Orders</a>
+                            <a class="nav-link text-white ms-3" href="become-seller-on-linkeble.html">Become Seller</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white ms-3" href="Favourites.html">Favourites</a>
+                            <a class="nav-link text-white ms-3" href="my-order.html">Orders</a>
                         </li>
                         <li id="navbar_bell_pop_up" class="nav-item position-relative">
                             <a class="nav-link text-white ms-3" href="#"><i class="fas fa-bell"></i></a>
@@ -113,61 +116,208 @@
         </div>
     </div>
     <div class="container">
-        <div class="row py-3">
-            <div class="col-md-6">
-                <h4 class="mb-2 heading-h4">Post for the Service You need!</h4>
-                <div class="p-3">
-                    <form action="submit-services-request.html" class="service-form">
-                        <label for="project_title">Project Title</label>
-                        <input type="text" class="form-input  mb-3" name="project_title" max="30" placeholder="30 Max Characters">
-                        <div class="position-relative">
-                            <label for="project_details">Project Details</label>
-                            <textarea id="message_word_count" class="form-input mb-3" name="project_details" rows="3" maxlength="3000" placeholder="Looking for service..."></textarea>
-                            <div class="position-absolute text-muted" style="right: 10px;
-                            bottom: 25px; font-size: 12px;">
-                                <span id="word_count">0</span>
-                                <span>/3000</span>
+        <h3 class="mt-3">Machine Learning</h3>
+        <p>The Ultimate services that fits your brand personality.</p>
+        <div class="services-card py-5">
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>expert mixing and mastering engineer</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (11)</span>
                             </div>
+                            <i class="far fa-heart heart-icon"></i>
                         </div>
-                        <input type="file" id="file-upload" class="mb-3" value="text" name="file_selection" placeholder="Attach files" hidden>
-                        <div class="d-flex mb-3">
-                            <div class=" btn me-3" id="file-upload-btn"><i class="fas fa-paperclip me-2" style="font-size: 20px"></i> Attach files
-                            </div>
-                            <div id="choosen-file" class="p-1 rounded d-none" style="border: 1px solid #00966B;">
-                                <span id="file-name"></span>
-                                <i id="clear-file" class="fas fa-times-circle ms-2"></i>
-                            </div>
-                        </div>
-                        <div class="options position-relative">
-                            <img src="assets/images/category-svgrepo-com.png" class="position-absolute icon-category">
-                            <select class="w-100 select-project pb-2 mb-2 ps-5">
-                                <option class="">Select Project Category</option>
-                                <option class="">Select Project Category</option>
-                                <option class="">Select Project Category</option>
-                                <option class="">Select Project Category</option>
-                            </select>
-                            <select class="w-100 select-project pb-2 mb-3 ps-5">
-                                <option>Select Project Sub Category</option>
-                                <option>Select Project Sub Category</option>
-                                <option>Select Project Sub Category</option>
-                                <option>Select Project Sub Category</option>
-                            </select>
-                            <img src="assets/images/PICOL-category.png" class="position-absolute icon-sub-category">
-                        </div>
-                        <label for="delivery_time">Delivery Time</label>
-                        <input type="text" class="form-input ps-4 mb-3" name="delivery_time" max="30" placeholder="Enter Delivery time in Days">
-                        <label for="project_budget">Project Budget</label>
-                        <input type="text" class="form-input ps-4 mb-3" name="project_budget" max="30" placeholder="Add Project Budget">
-                        <input type="submit" name="submit_btn" value="Submit Service Request" class="service_submit_btn">
-                    </form>
-                </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
             </div>
-            <div class="col-md-6 ps-5">
-                <h4 class="mb-5 heading-h4">Tell service providers what you want to done?</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,
-                    eleifend quis magna. Sed fringilla, est at volutpat sodales, nisl eros tristique sapien, ut gravida urna
-                    lorem a odio. Sed bibendum lacinia nisl, sit amet blandit velit porta ultrices. Pellentesque vehicula maximus augue, id consequat mi. Aenean eget justo mauris.<br> Vivamus nec augue rutrum, porttitor ex a, aliquet lacus. Curabitur egestas tincidunt nunc et vestibulum. Vestibulum sit amet blandit massa, vel ornare lectus. Ut quis urna suscipit, pretium magna sed, tincidunt purus. Praesent non facilisis dui. Praesent blandit arcu velit, a placerat lorem interdum ac. Quisque sollicitudin, justo vitae fermentum commodo, orci nibh condimentum sapien, a tempus urna turpis id felis. Aliquam erat volutpat. Nam ac molestie nisi.<br>
-                    Pellentesque sodales dui sed massa porta, a volutpat nisl consequat. </p>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>engaging article or blog post</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (18)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/6Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>SEO and ranking your Sites/Channel</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (19)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/7Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>create original business poster for digital marketing</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (3)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/8Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>trumpet section to ensure your song is a hit</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">4.9 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/14Mask Group 13.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Programming in python</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (11)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/9Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Proofread and Editing website</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (28)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/10Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Pro Logo Designing</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/11Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Microcontroller Programming </p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (3)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/12Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>WordPress Bug Fixer and Developer</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">4.9 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/15Mask Group 13.png" width="100%">
+                    </div>
+                </a>
             </div>
         </div>
     </div>

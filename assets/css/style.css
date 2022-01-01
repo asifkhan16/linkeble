@@ -18,6 +18,7 @@ body {
 
 .navbar a {
     color: #fff;
+    font-size: 20px;
 }
 
 .navbar a:hover {
@@ -26,6 +27,14 @@ body {
 
 .active {
     color: #00966B !important;
+}
+
+.nav-join-btn {
+    border: 1px solid var(--primary-color);
+    padding: 2px 15px !important;
+    border-radius: 10px;
+    font-size: 15px !important;
+    color: var(--primary-color) !important;
 }
 
 .online-mark {
@@ -398,7 +407,35 @@ body {
     border-radius: 50%;
     background-color: #fff;
 }
+.view-all-btn{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+.view-all-btn:hover{
+    color: var(--primary-color);
+}
+.more-services-started{
+    background-color: #006875;
+    border-radius: 10px;
+}
 
+.get-started-btn {
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--primary-color);
+}
+.submit-request-btn{
+    padding: 4px 15px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.submit-request-btn:hover{
+    color: #fff;
+}
 .footer {
     background-color: #002D20;
 }
