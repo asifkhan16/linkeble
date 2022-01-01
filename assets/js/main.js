@@ -447,7 +447,7 @@ $(document).ready(function() {
         $('#service_requirement_body').slideToggle();
     });
     $(this).on('click', '#service_delivery_header', function() {
-        $('#service_delivery_body').slideToggle();
+        $('#service_delivery_ body').slideToggle();
     });
     $(this).on('click', '#service_delivery_two_header', function() {
         $('#service_delivery_two_body').slideToggle();
@@ -462,6 +462,35 @@ $(document).ready(function() {
         $('#my_review_body').slideToggle();
     });
     // PLACE ORDER PAGE END
+
+
+    // CHAT POP UP START
+
+    $(this).on('click', '#chat_page_sendOffer_btn', function() {
+        $('#select_servcie_pop_up').removeClass('d-none');
+    });
+    $(this).on('click', '#close_select_servcie_pop_up', function() {
+        $('#select_servcie_pop_up').addClass('d-none');
+    });
+    $(this).on('click', '.click_on_service', function() {
+        $('#select_servcie_pop_up').addClass('d-none');
+        $('#payment_pop_up').removeClass('d-none');
+    });
+    $(this).on('click', '#close_payment_pop_up', function() {
+        $('#payment_pop_up').addClass('d-none');
+    });
+    $(this).on('click', '#create_offer_btn', function() {
+        $('#hel').css('height', 'auto');
+        $('#send_offer_pop_up').removeClass('d-none');
+        $('#payment_pop_up').addClass('d-none');
+    });
+    $(this).on('click', '#close_send_offer_pop_up', function() {
+        $('#send_offer_pop_up').addClass('d-none');
+    });
+
+
+
+    // CHAT POP UP END
 
 
 
