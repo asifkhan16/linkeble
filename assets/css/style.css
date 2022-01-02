@@ -42,7 +42,7 @@ body {
     height: 12px;
     background-color: #00DD34;
     top: 12%;
-    right: 27%;
+    right: 20%;
 }
 
 .tags {
@@ -114,22 +114,38 @@ body {
 }
 
 #bell_pop_up {
-    width: 350px;
+    width: 380px;
     right: 0;
     background-color: #fff;
     color: #000;
     z-index: 999;
 }
 
+
+
 @media screen and (max-width: 768px) {
     #bell_pop_up {
+        width: 300px;
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
+#bell_pop_up img {
+    border-radius: 50%;
+}
+
+#bell_pop_up a {
+    text-decoration: none;
+}
+
+#bell_pop_up>div:hover {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
 #bell_pop_up h6 {
     margin: 0;
+    color: #000;
 }
 
 #bell_pop_up h6 span {

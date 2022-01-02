@@ -373,12 +373,14 @@ $(document).ready(function() {
     $('#bell_pop_up').removeClass('d-none');
     $(this).on('mouseover', '#navbar_online_user_image', function() {
         $('#logged_in_user_pop_up').show(100);
+        $('#bell_pop_up').hide();
     });
     $(this).on('mouseleave', '#navbar_online_user_image', function() {
         $('#logged_in_user_pop_up').hide();
     });
     $(this).on('mouseover', '#navbar_bell_pop_up', function() {
         $('#bell_pop_up').show(100);
+        $('#logged_in_user_pop_up').hide();
     });
     $(this).on('mouseleave', '#navbar_bell_pop_up', function() {
         $('#bell_pop_up').hide();
