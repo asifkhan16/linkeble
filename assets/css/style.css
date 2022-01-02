@@ -38,11 +38,11 @@ body {
 }
 
 .online-mark {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     background-color: #00DD34;
     top: 12%;
-    right: 20%;
+    right: 18%;
 }
 
 .tags {
