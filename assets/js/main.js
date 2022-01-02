@@ -451,7 +451,7 @@ $(document).ready(function() {
         $('#service_requirement_body').slideToggle();
     });
     $(this).on('click', '#service_delivery_header', function() {
-        $('#service_delivery_ body').slideToggle();
+        $('#service_delivery_body').slideToggle();
     });
     $(this).on('click', '#service_delivery_two_header', function() {
         $('#service_delivery_two_body').slideToggle();
@@ -464,6 +464,15 @@ $(document).ready(function() {
     });
     $(this).on('click', '#my_review_header', function() {
         $('#my_review_body').slideToggle();
+    });
+    $(this).on('click', '#delivery_status_header', function() {
+        $('#delivery_status_body').slideToggle();
+    });
+    $(this).on('click', '#revision_delivery_header', function() {
+        $('#revision_delivery_body').slideToggle();
+    });
+    $(this).on('click', '#revision_requirement_header', function() {
+        $('#revision_requirement_body').slideToggle();
     });
     // PLACE ORDER PAGE END
 
