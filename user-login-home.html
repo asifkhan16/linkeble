@@ -33,58 +33,102 @@
                             <a class="nav-link text-white ms-3" href="chat.html">Chat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white ms-3" href="my-order.html">Orders</a>
+                            <a class="nav-link text-white ms-3" href="active-orders.html">Orders</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white ms-3" href="Favourites.html">Favourites</a>
                         </li>
+                        <!-- bell icon -->
                         <li id="navbar_bell_pop_up" class="nav-item position-relative">
-                            <a class="nav-link text-white ms-3" href="#"><i class="fas fa-bell"></i></a>
-                            <div id="bell_pop_up" class="rounded px-3 py-2 position-absolute">
+                            <a class="nav-link text-white mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
                                 <div class="d-flex align-items-center mb-4">
                                     <img src="assets/icons/NoPath — копия (43).png">
-                                    <div class="ps-3">
-                                        <h6><span>New Message from</span> Nutella </h6>
-                                        <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
-                                    </div>
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <img src="assets/icons/Image 589.png">
-                                    <div class="ps-3">
-                                        <h6>Alexa Liras <span>Placed an order</span></h6>
-                                        <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
-                                    </div>
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center mb-4">
                                     <img src="assets/icons/Image 590.png">
-                                    <div class="ps-3">
-                                        <h6>Laurent Perrier <span>accepted order</span></h6>
-                                        <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
-                                    </div>
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <img src="assets/icons/Image 591.png">
-                                    <div class="ps-3">
-                                        <h6><span>New Message from</span>Michael Levi</h6>
-                                        <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
-                                    </div>
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </li>
+                        <!-- image -->
                         <li class="nav-item position-relative" id="navbar_online_user_image">
-                            <a class="nav-link  position-relative" href="#">
+                            <a class="nav-link text-center  position-relative" href="#">
                                 <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
                                 <span class="position-absolute rounded-circle d-block online-mark"></span>
                             </a>
-                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded px-4 position-absolute">
-                                <h6 class="text-center my-4 rounded">Balance: USD $ 133</h6>
-                                <ul>
-                                    <li><a href="account.html"> My Profile</a></li>
-                                    <li><a href="analytics.html"> Analytics</a></li>
-                                    <li><a href="servicerequst.html"> Buyer Service Request</a></li>
-                                    <li><a href="#"> Settings</a></li>
-                                    <li><a href="#"> Help/Support</a></li>
-                                    <li><a href="#"> Logout</a></li>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a class="active-profile" href="#" style="">Buyer Mode</a>
+                                        <a href="seller-dashboard.html">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">My Selling Dashboard</a></li>
+                                    <li><a href="service-request.html">Post Service Request</a></li>
+                                    <li><a href="post-request.html">Posted Requests</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="account-and-security.html"> Help/Support</a></li>
+                                    <li id="select_language" style="cursor: pointer;">
+                                        <i class="fas fa-globe"></i>
+                                        <span>English</span>
+                                    </li>
+                                    <li id="select_currency" style="cursor: pointer;">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span>USD</span>
+                                    </li>
+                                    <li><a href="index.html"> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -669,7 +713,7 @@
                 <div class="col-md-4 mb-4">
                     <h4 class="fw-bold mb-3">About</h4>
                     <a href="about-us.html">About us</a>
-                    <a href="#">How it works?</a>
+                    <a href="how-it-work.html">How it works?</a>
                     <a href="privacy-policy.html">News</a>
                     <a href="jobs.html">Jobs</a>
                 </div>
@@ -695,6 +739,13 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
             </div>
+            <!-- bottom to top button -->
+            <!-- <div class=" text-center bottom-to-top" style="right: 4rem; bottom: 8rem;">
+                <a href="#">
+                    <img src="assets/icons/Icon ionic-ios-arrow-back.png" width="55%">
+                    <p style="margin-top: -7px!important">Top</p>
+                </a>
+            </div> -->
         </div>
         <div class="px-5 my-4">
             <hr>
@@ -720,41 +771,45 @@
             </div>
         </div>
         <!-- LANGUAGE POP UP -->
-        <div id="language_pop_up" class="position-fixed d-none" style="background-color: #000;color: #fff">
-            <div class="position-relative px-5 py-3">
-                <h6 class="text-center my-3">Select Language</h6>
-                <ul>
-                    <li>English<span>(English)</span><i class="fas fa-check"></i></li>
-                    <li>Lwo<span>(Acholi)</span></li>
-                    <li>Arfikaans<span>(Arfikaans)</span></li>
-                    <li>German <span>(Deutsch)</span></li>
-                    <li>French <span>(François)</span></li>
-                    <li>Spanish<span>(Español)</span></li>
-                    <li>Italian<span>(Italiano)</span></li>
-                    <li>Romanian<span>(Română)</span></li>
-                    <li>Portuguese<span>(Português)</span></li>
-                    <li>Swedish<span>(Svenska)</span></li>
-                    <li>Danish<span>(Dansk)</span></li>
-                    <li>Urdu<span>(اردو)</span></li>
-                </ul>
-                <button>Save</button>
-                <i id="close_lang_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+        <div id="language_pop_up" class="position-fixed d-none" style="">
+            <div class="lang-pop-up-body" style="background-color: #000;color: #fff">
+                <div class="position-relative px-5 py-3">
+                    <h6 class="text-center my-3">Select Language</h6>
+                    <ul>
+                        <li>English<span>(English)</span><i class="fas fa-check"></i></li>
+                        <li>Lwo<span>(Acholi)</span></li>
+                        <li>Arfikaans<span>(Arfikaans)</span></li>
+                        <li>German <span>(Deutsch)</span></li>
+                        <li>French <span>(François)</span></li>
+                        <li>Spanish<span>(Español)</span></li>
+                        <li>Italian<span>(Italiano)</span></li>
+                        <li>Romanian<span>(Română)</span></li>
+                        <li>Portuguese<span>(Português)</span></li>
+                        <li>Swedish<span>(Svenska)</span></li>
+                        <li>Danish<span>(Dansk)</span></li>
+                        <li>Urdu<span>(اردو)</span></li>
+                    </ul>
+                    <button>Save</button>
+                    <i id="close_lang_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+                </div>
             </div>
         </div>
         <!-- CURRENCY POP UP -->
-        <div id="currency_pop_up" class="position-fixed d-none" style="background-color: #000;color: #fff">
-            <div class="position-relative px-5 py-3">
-                <h6 class="text-center my-3">Choose a currency</h6>
-                <ul>
-                    <li>United States Dollar<br>USD - US$ <i class="fas fa-check"></i></li>
-                    <li>Euro<br>EUR - €</li>
-                    <li>British Pound<br>GBP - £</li>
-                    <li>Australian Dollar<br>AUD - A$</li>
-                    <li>Canadian Dollar<br>CAD - CA$</li>
-                    <li>Israeli Shekel<br>ILS - ₪</li>
-                </ul>
-                <button>Save</button>
-                <i id="close_currency_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+        <div id="currency_pop_up" class="position-fixed d-none">
+            <div class="currency-pop-up-body" style="background-color: #000;color: #fff">
+                <div class="position-relative px-5 py-3">
+                    <h6 class="text-center my-3">Choose a currency</h6>
+                    <ul>
+                        <li>United States Dollar<br>USD - US$ <i class="fas fa-check"></i></li>
+                        <li>Euro<br>EUR - €</li>
+                        <li>British Pound<br>GBP - £</li>
+                        <li>Australian Dollar<br>AUD - A$</li>
+                        <li>Canadian Dollar<br>CAD - CA$</li>
+                        <li>Israeli Shekel<br>ILS - ₪</li>
+                    </ul>
+                    <button>Save</button>
+                    <i id="close_currency_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+                </div>
             </div>
         </div>
     </div>

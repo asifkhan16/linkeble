@@ -2051,7 +2051,16 @@ label.switch>input[type="checkbox"]:checked~span:after {
     text-decoration: none;
     border-radius: 10px;
 }
+.buyer-request-top select {
+    background-color: var(--primary-color);
+    padding: 3px 15px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
 
+}
 .buyer-request table tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding: 10px 0;
