@@ -58,14 +58,19 @@ $(document).ready(function() {
         $("#login-form").addClass("d-none");
         $("#signup-form").removeClass("d-none");
     });
-    $(this).on("click", "#signin-btn", function() {
-        $("#login-form").removeClass("d-none");
-        $("#signup-form").addClass("d-none");
-    });
+    // $(this).on("click", "#signin-btn", function() {
+    //     $("#login-form").removeClass("d-none");
+    //     $("#signup-form").addClass("d-none");
+    // });
     $(this).on("click", "#form-sign-in-btn", function(e) {
         e.preventDefault();
         $("#login-form").addClass("d-none");
         $("#become-seller-section").removeClass("d-none");
+    });
+    $(this).on("click", "#form-sign-up-btn", function(e) {
+        e.preventDefault();
+        $("#login-form").removeClass("d-none");
+        $("#signup-form").addClass("d-none");
     });
     $(this).on("click", "#forgot-btn", function() {
         $("#login-form").addClass("d-none");
